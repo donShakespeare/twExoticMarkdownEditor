@@ -6,7 +6,9 @@ neat Markdown editor, better than a bare textarea or any other Markdown editor I
 Bagged with highly configurable toolbar (buttons) and context menu filled with raw awesomeness.
 
 Works seamlesslyly with *tinymceBubbleBar.js* to give you that out-of-web experience - floating toolbar.
+
 Works seamlesslyly with *twPreCodeManager.js* to cater for fenced block codes.
+
 Works seamlesslyly with *modxMagicHoverLink.js* for inserting links and images from file browser and so forth.
 
 # Usage:

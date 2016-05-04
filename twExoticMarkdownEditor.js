@@ -28,7 +28,7 @@
       twPreCodeManager: "[[++assets_url]]components/tinymcewrapper/tinymceplugins/twPreCodeManager.js",
       modxMagicHoverLink: "[[++assets_url]]components/tinymcewrapper/tinymceplugins/modxMagicHoverLink.js",
     },
-    twExoticMarkdownSettings: {
+    twExoticMarkdownEditorSettings: {
       addClass: false, //default is true (add .twExoticMarkdownEditor class to editor body)
       removeClasses: "a b c", // remove class(es) when editor loads - smoothly reveal editor only after text has been prepared
       skipClass: "", // do not process this particular editor content, skip it!

@@ -83,7 +83,7 @@ tinymce.PluginManager.add('twExoticMarkdownEditor', function(editor) {
       editor.setContent(editor.settings.unMarkedContent, {format:"raw"})
     }
     if(editor.getParam("twExoticMarkdownEditorSettings",{}).removeClasses){
-      $(editor.getBody()).removeClass(editor.getParam("twExoticMarkdownEditorSettings",{}).removeClass);
+      $(editor.getBody()).removeClass(editor.getParam("twExoticMarkdownEditorSettings",{}).removeClasses);
     }
     // console.log("LoadContent")
   });

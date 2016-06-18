@@ -47,7 +47,7 @@ function saveMyFootMarks(myMarks) {
   return marks;
 }
 function getMyFootMarks(myMarks) {
-  var marks = tinymce.html.Entities.encodeAllRaw(myMarks).replace(/ /g, "&nbsp;").replace(/(?:\r\n|\r|\n)/g, "<br />").replace(/(?:&amp;gt;|&gt;)/g, ">").replace(/(?:&amp;)/g, "&");
+  var marks = tinymce.html.Entities.encodeAllRaw(myMarks).replace(/  /g, " &nbsp;").replace(/(?:\r\n|\r|\n)/g, "<br />").replace(/(?:&amp;gt;|&gt;)/g, ">").replace(/(?:&amp;)/g, "&");
   return marks;
 }
 function makeMyFootMarks(editor,firstPart,lorem,lastPart) {
@@ -126,7 +126,7 @@ tinymce.PluginManager.add('twExoticMarkdownEditor', function(editor) {
   // });
   editor.on('PastePreProcess', function(args) {
     // if(editor.settings.valid_elements !== "br"){
-      var text = $("<div/>").html(args.content.replace(/ /g, "&nbsp;").replace(/(?:\r\n|\r|\n)/g, "<br>"));
+      var text = $("<div/>").html(args.content.replace(/  /g, " &nbsp;").replace(/(?:\r\n|\r|\n)/g, "<br>"));
       text.children().contents().unwrap();
       args.content = text.html();
       //or below
@@ -274,4 +274,4 @@ tinymce.PluginManager.add('twExoticMarkdownEditor', function(editor) {
       window.open("http://www.tablesgenerator.com/markdown_tables");
     }
   });
-})
+});
